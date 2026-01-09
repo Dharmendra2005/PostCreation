@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-teal-700">
+      <div class="bg-white rounded-xl shadow-2xl w-full max-w-md px-8 py-10">
+        <h2 class="text-2xl font-semibold text-center text-gray-700 mb-8">
+          Register
+        </h2>
+
+        <form class="space-y-6" action="/register" method="post">
+            <label class="text-sm text-gray-600">Name:</label>
+            <input class="mt-1 w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700 focus:outline-none" type="text" placeholder="Enter Name" name ="name" required>
+          <label class="text-sm text-gray-600">Username:</label>
+            <input class="mt-1 w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700 focus:outline-none" type="text" placeholder="Enter Username" name ="username" required>
+            <label class="text-sm text-gray-600">Age:</label>
+            <input class="mt-1 w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700 focus:outline-none" type="age" placeholder="Enter Age" name ="age" required>
+         <label class="text-sm text-gray-600">Email:</label>
+            <input class="mt-1 w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700 focus:outline-none" type="email" placeholder="Enter Email" name ="email" required>
+           <label class="text-sm text-gray-600">Password:</label>
+            <input class="mt-1 w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700 focus:outline-none" type="password" placeholder="Enter Password" name ="password" required>
+          <input class="w-full py-3 rounded-md bg-teal-700 text-white font-semibold tracking-wide" type="submit" value="SIGN IN" > 
+        </form>
+    </div>
+      </div>
+    </div>
+</body>
+</html>
