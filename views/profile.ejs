@@ -47,9 +47,11 @@
             >
               <h4>@<%= user.username %></h4>
               <p><%= post.postdata %></p>
+              <small class="inline-block mt-2"> <%= post.likes.length %> Likes</small>
                 <div class="flex items-center justify-between">
-               <a class="text-blue-700 hover:underline">Like 👍</a>
-              <a class="text-zinc-700 hover:underline">Edit</a>
+               <a class="text-blue-700 hover:underline" href="/like/<%= post._id%>">
+                <%= post.likes.indexOf(user._id) === -1 ? "Like👍" : "Unlike👎"%></a>
+              <a class="text-zinc-700 hover:underline" href="/edit/<%= post._id %>">Edit</a>
             </div>
             </div>
             <%}) %>
